@@ -7,13 +7,25 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: 'message/:id',
-    loadChildren: () => import('./view-message/view-message.module').then( m => m.ViewMessagePageModule)
-  },
-  {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },
+  {
+    path: 'user-register',
+    loadChildren: () => import('./user-register/user-register.module').then( m => m.UserRegisterPageModule)
+  },
+  {
+    path: 'step-one-register',
+    loadChildren: () => import('./step-one-register/step-one-register.module').then( m => m.StepOneRegisterPageModule)
+  },
+  {
+    path: 'step-two-register',
+    loadChildren: () => import('./step-two-register/step-two-register.module').then( m => m.StepTwoRegisterPageModule)
+  },
+  {
+    path: 'last-step-register',
+    loadChildren: () => import('./last-step-register/last-step-register.module').then( m => m.LastStepRegisterPageModule)
   },
 ];
 
