@@ -6,3 +6,50 @@
   width: 72.35px;
   height: 64px;
 }
+
+.cellphoneNumber{
+  width: 308px;
+  height: 245px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.buttonNumber{
+  --color: var(--ion-color-secondary);
+  font-size: 32px;
+}
+
+.buttons{
+  width: 308px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#backspace{
+  width: 56px;
+  height: 40.88px;
+}
+
+#zero{
+  margin-left: 1px;
+}
+
+#buttonCheck{
+  width: 56px;
+  height: 56px;
+  --border-radius: 100px;
+  --background-color: var(--ion-color-tertiary);
+  --background-activated: var(--ion-color-primary);
+}
+#check{
+  width: 20px;
+  height: 16px;
+}
+
+

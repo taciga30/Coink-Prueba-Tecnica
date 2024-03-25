@@ -1,13 +1,72 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>step-two-register</ion-title>
-  </ion-toolbar>
+<ion-header>
+  <ion-icon name="ionic-ios-arrow-back"></ion-icon>
+  <ion-toolbar class="ion-padding">DATOS DE CUENTA</ion-toolbar>
+  <ion-buttons slot="back">
+    <ion-back-button default-href="#"></ion-back-button>
+  </ion-buttons>
+  <ion-img class="progressBar"
+  src="https://raw.githubusercontent.com/taciga30/Coink-Prueba-Tecnica/master/registro-app/src/assets/images/Grupo%2020670%402x.png"
+  alt="Barra progreso"
+></ion-img>
 </ion-header>
 
+
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">step-two-register</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-img class="logo"
+  src="https://raw.githubusercontent.com/taciga30/Coink-Prueba-Tecnica/master/registro-app/src/assets/images/Oink%402x.png"
+  alt="Cerdito Coink"
+></ion-img>
+<ion-text>¿CUÁLES SON TUS DATOS?</ion-text>
+<ion-text>Ahora necesitamos saber algunos datos tuyos</ion-text>
+<ion-item-divider></ion-item-divider>
+<ion-text>Documento de identidad</ion-text>
+<ion-list>
+  <ion-item>
+    <ion-select label="Tipo de documento" labelPlacement="floating" interface="popover">
+      <ion-select-option value="ti">Tarjeta de Identidad</ion-select-option>
+      <ion-select-option value="cc">Cédula de Ciudadanía</ion-select-option>
+      <ion-select-option value="ce">Cédula de Extrannjería</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <ion-item>
+    <ion-input label="Número de documento" labelPlacement="floating" type="number"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input label="Fecha de expedición del documento" labelPlacement="floating"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input label="Fecha de nacimiento" labelPlacement="floating"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-select label="Género" labelPlacement="floating" interface="popover">
+      <ion-select-option value="fe">Femenino</ion-select-option>
+      <ion-select-option value="mas">Masculino</ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+<ion-text>Configura tu cuenta</ion-text>
+<ion-list>
+  <ion-item>
+    <ion-input label="Correo electrónico" labelPlacement="floating" type="email" ngModel email errorText="Correo inválido"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input label="Confirmar correo electrónico" labelPlacement="floating" type="email" ngModel email></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input label="PIN de seguridad" labelPlacement="floating" type="password">
+      <ion-button fill="clear" slot="end" aria-label="Show/hide">
+        <ion-icon slot="icon-only" name="eye" aria-hidden="true"></ion-icon>
+      </ion-button>
+    </ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input label="Confirmar PIN de seguridad" labelPlacement="floating" type="password">
+      <ion-button fill="clear" slot="end" aria-label="Show/hide">
+        <ion-icon slot="icon-only" name="eye" aria-hidden="true"></ion-icon>
+      </ion-button>
+    </ion-input>
+  </ion-item>
+</ion-list>
+<ion-button shape="round" class="button" id="buttonLogin" color="secondary">SIGUIENTE</ion-button>
+
 </ion-content>
