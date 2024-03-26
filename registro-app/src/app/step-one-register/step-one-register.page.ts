@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-step-one-register',
@@ -8,8 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class StepOneRegisterPage implements OnInit {
 [x: string]: any;
 
-  constructor() { }
+@Output() numberEntered = new EventEmitter<number>();
 
+
+
+  constructor() { }
+  enterNumber(num: number) {
+    this.numberEntered.emit(num);
+  }
+  
   ngOnInit() {
   }
 

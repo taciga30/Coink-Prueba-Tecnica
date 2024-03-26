@@ -1,36 +1,45 @@
-<ion-header>
-  <ion-icon name="ionic-ios-arrow-back"></ion-icon>
-  <ion-toolbar class="ion-padding">NÚMERO CELULAR</ion-toolbar>
-  <ion-buttons slot="start">
-    <ion-back-button default-href="#"></ion-back-button>
+<ion-header class="header" color="white">
+<div class="header-logo">
+  <ion-buttons slot="back" class="buttonBack">
+    <ion-back-button class="iconArrow" default-href="#" color="primary"></ion-back-button>
   </ion-buttons>
+  <ion-toolbar class="title" >NÚMERO CELULAR</ion-toolbar>
+</div>
+<div class="header-progressBar">
   <ion-img class="progressBar"
   src="https://raw.githubusercontent.com/taciga30/Coink-Prueba-Tecnica/master/registro-app/src/assets/images/Grupo%2020670%402x.jpg"
   alt="Barra progreso"
 ></ion-img>
+</div>
 </ion-header>
-<ion-content [fullscreen]="true">
+
+<ion-content fullscreen="true" >
+  <section class="container">
+  <div class="logoTextNumber">
   <ion-img class="logo"
   src="https://raw.githubusercontent.com/taciga30/Coink-Prueba-Tecnica/master/registro-app/src/assets/images/Oink%402x.png"
   alt="Cerdito Coink"
 ></ion-img>
-<ion-text>Para comenzar, por favor ingresa tu número celular.</ion-text>
-<ion-item-divider></ion-item-divider>
-<ion-input type="tel" placeholder="( X X X - X X X X X X )"></ion-input>
+<ion-text class="textNumber" color="medium">Para comenzar, por favor ingresa tu número celular.</ion-text>
+</div>
+<ion-item-divider id="divider"></ion-item-divider>
+<ion-input class="inputCellphone" id="numberCellphone" placeholder=" ( X X X - X X X X X X X )" type="tel" fill="outline" ></ion-input>
 <ion-segment value="number" class="cellphoneNumber">
-  <ion-button class="buttonNumber" id="one" fill="clear">1</ion-button>
-  <ion-button class="buttonNumber" id="two" fill="clear">2</ion-button>
-  <ion-button class="buttonNumber" id="three" fill="clear">3</ion-button>
-  <ion-button class="buttonNumber" id="four" fill="clear">4</ion-button>
-  <ion-button class="buttonNumber" id="five" fill="clear">5</ion-button>
-  <ion-button class="buttonNumber" id="six" fill="clear">6</ion-button>
-  <ion-button class="buttonNumber" id="seven" fill="clear">7</ion-button>
-  <ion-button class="buttonNumber" id="eigth" fill="clear">8</ion-button>
-  <ion-button class="buttonNumber" id="nine" fill="clear">9</ion-button>
+  <ion-button class="buttonNumber" id="one" fill="clear" (click)="enterNumber(1)">1</ion-button>
+  <ion-button class="buttonNumber" id="two" fill="clear" (click)="enterNumber(2)">2</ion-button>
+  <ion-button class="buttonNumber" id="three" fill="clear" (click)="enterNumber(3)">3</ion-button>
+  <ion-button class="buttonNumber" id="four" fill="clear" (click)="enterNumber(4)">4</ion-button>
+  <ion-button class="buttonNumber" id="five" fill="clear" (click)="enterNumber(5)">5</ion-button>
+  <ion-button class="buttonNumber" id="six" fill="clear" (click)="enterNumber(6)">6</ion-button>
+  <ion-button class="buttonNumber" id="seven" fill="clear" (click)="enterNumber(7)">7</ion-button>
+  <ion-button class="buttonNumber" id="eigth" fill="clear" (click)="enterNumber(8)">8</ion-button>
+  <ion-button class="buttonNumber" id="nine" fill="clear" (click)="enterNumber(9)">9</ion-button>
   <ion-segment class="buttons">
     <ion-button value="erase" id="buttonBackspace" fill="clear"><ion-img id="backspace" src="https://raw.githubusercontent.com/taciga30/Coink-Prueba-Tecnica/master/registro-app/src/assets/images/Backspace%402x(1).png"></ion-img></ion-button>
-    <ion-button class="buttonNumber" id="zero" fill="clear">0</ion-button>
-    <ion-button id="buttonCheck" disabled="true" color="tertiary"><ion-img id="check" src="https://raw.githubusercontent.com/taciga30/Coink-Prueba-Tecnica/master/registro-app/src/assets/images/Check%403x(1).png"></ion-img></ion-button>
+    <ion-button class="buttonNumber" id="zero" fill="clear" (click)="enterNumber(0)">0</ion-button>
+    <ion-button id="buttonCheck" disabled="false" color="tertiary" routerLink="/step-two-register"><ion-img id="check" src="https://raw.githubusercontent.com/taciga30/Coink-Prueba-Tecnica/master/registro-app/src/assets/images/Check%403x(1).png"></ion-img></ion-button>
   </ion-segment>
 </ion-segment>
+</section>
+
 </ion-content>

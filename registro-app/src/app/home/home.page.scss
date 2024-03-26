@@ -5,6 +5,13 @@ display: block;
 align-content: center;
 }
 
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 ion-img{
   width:  156.75px;
   height: 192.5px;

@@ -1,9 +1,123 @@
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.header-logo{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.buttonBack{
+  --ion-back-button-icon-size: 40px;
+  margin-right: 72px;
+}
+
+.title{
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  color: var(--ion-color-secondary);
+}
+.progressBar{
+  width: 188px;
+  height: 18px;
+  margin: 16px 93px 8px 94px;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logoTextInfo{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 47px 24px 28px 24px;
+  padding: 0;
+  height: 114px;
+  width: 327px;
+}
+.logo{
+  width: 72.35px;
+  height: 64px;
+  margin-right: 23.65px;
+  padding: 0;
+}
+.texts{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  gap: 12px;
+  width: 231px;
+  height: 114px;
+}
+.button{
+    width: 326px;
+    height: 50px;
+    color: var(--ion-color-secondary);
+    font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+.fontTexts{
+  font-family: 'Avenir LT Pro', sans-serif;
+  font-size: 16px;
+  color: var(--ion-color-medium);
+}
+.textImportant{
+  width: 326px;
+  height: 340px;
+  margin: 16px 25px 40px 24px;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ion-modal#example-modal {
   --width: fit-content;
   --min-width: 250px;
   --height: fit-content;
   --border-radius: 6px;
-  --box-shadow: 0 28px 48px rgba(0, 0, 0, 0.4);
+  --box-shadow: 0 28px 48px rgba(0, 0, 0, 0.85);
 }
 
 ion-modal#example-modal h1 {

@@ -1,47 +1,91 @@
-<ion-header>
-  <ion-icon name="ionic-ios-arrow-back"></ion-icon>
-  <ion-toolbar class="ion-padding">FINALIZAR</ion-toolbar>
-  <ion-buttons slot="back">
-    <ion-back-button default-href="#"></ion-back-button>
-  </ion-buttons>
-  <ion-img class="progressBar"
-  src="https://raw.githubusercontent.com/taciga30/Coink-Prueba-Tecnica/master/registro-app/src/assets/images/Grupo%2020670%403x(1).png"
-  alt="Barra progreso"
-></ion-img>
+<ion-header class="header">
+  <div class="header-logo">
+    <ion-buttons slot="back" class="buttonBack">
+      <ion-back-button
+        class="iconArrow"
+        default-href="#"
+        color="primary"
+      ></ion-back-button>
+    </ion-buttons>
+    <ion-toolbar class="title" id="header-title">FINALIZAR</ion-toolbar>
+  </div>
+  <div class="header-progressBar">
+    <ion-img
+      class="progressBar"
+      src="https://raw.githubusercontent.com/taciga30/Coink-Prueba-Tecnica/master/registro-app/src/assets/images/Grupo%2020670%403x(1).png"
+      alt="Barra progreso"
+    ></ion-img>
+  </div>
 </ion-header>
 
-
 <ion-content [fullscreen]="true">
-  <ion-img class="logo"
-  src="https://raw.githubusercontent.com/taciga30/Coink-Prueba-Tecnica/master/registro-app/src/assets/images/OinkPolicia%402x.png"
-  alt="Cerdito Policia Coink"
-></ion-img>
-<ion-title>ESTAS MUY CERCA DE SER PARTE DE COINK.</ion-title>
-<ion-text>Solo es necesario que leas detenidamente el contrato que se encuentra al final de esta pantalla y lo aceptes.</ion-text>
-<ion-item-divider></ion-item-divider>
-<ion-text>LO MÁS IMPORTANTE</ion-text>
-
-<ion-text>Para la apertura del Depósito de Bajo Monto en COINK debes ser una persona natural que de acuerdo con nuestra legislación vigente te encuentres en plena capacidad para adquirir derechos y contraer obligaciones. Abrirás una cuenta COINK de Bajo Monto la cual te permitirá tener un saldo hasta por 8 salarios mínimos en el mes y realizar débitos por el mismo valor. Si deseas sobrepasar estos límites debes solicitarnos la apertura de un Depósito Ordinario COINK Persona Natural. Solo puedes tener una cuenta COINK de Bajo Monto y podrás utilizar tu dispositivo móvil para consultar tu saldo, tus movimientos, realizar tus transacciones y administrar tu cuenta. Recuerda que no necesitas saldo mínimo ni monto inicial para su apertura.</ion-text>
-<ion-text>Lee tu contrato</ion-text>
-<ion-checkbox labelPlacement="end">He leído y acepto el contrato</ion-checkbox>
-<ion-button shape="round" class="button" id="open-custom-dialog" color="secondary">ACEPTAR</ion-button>
-
-
-
-  <ion-modal id="example-modal" #modal trigger="open-custom-dialog">
-    <ng-template>
-      <div class="wrapper">
-        <ion-img class="logoRegalo"
-  src="https://raw.githubusercontent.com/taciga30/Coink-Prueba-Tecnica/master/registro-app/src/assets/images/marrano%20regalo%402x.png"
-  alt="Cerdito Regalo Coink"
-></ion-img>
-        <h1>¡Bienvenido a Coink!</h1>
-
-        <p>¡Cuenta creada exitosamente, tu marrano ya está listo para que empieces a ahorrar!</p>
-        <ion-button shape="round" class="button" id="buttonLogin" color="secondary">CONTINUAR</ion-button>
+  <section class="container">
+    <div class="logoTextInfo">
+      <ion-img
+        class="logo"
+        src="https://raw.githubusercontent.com/taciga30/Coink-Prueba-Tecnica/master/registro-app/src/assets/images/OinkPolicia%402x.png"
+        alt="Cerdito Policia Coink"
+      ></ion-img>
+      <div class="texts">
+        <ion-title>ESTAS MUY CERCA DE SER PARTE DE COINK.</ion-title>
+        <ion-text class="fontTexts"
+          >Solo es necesario que leas detenidamente el contrato que se encuentra
+          al final de esta pantalla y lo aceptes.</ion-text
+        >
       </div>
-    </ng-template>
-  </ion-modal>
+    </div>
+    <ion-item-divider></ion-item-divider>
+    <ion-text class="title">LO MÁS IMPORTANTE</ion-text>
+    <div class="textImportant">
+    <ion-text class="fontTexts">
+      Para la apertura del Depósito de Bajo Monto en COINK debes ser una
+      persona natural que de acuerdo con nuestra legislación vigente te
+      encuentres en plena capacidad para adquirir derechos y contraer
+      obligaciones. Abrirás una cuenta COINK de Bajo Monto la cual te permitirá
+      tener un saldo hasta por 8 salarios mínimos en el mes y realizar débitos
+      por el mismo valor. Si deseas sobrepasar estos límites debes solicitarnos
+      la apertura de un Depósito Ordinario COINK Persona Natural. Solo puedes
+      tener una cuenta COINK de Bajo Monto y podrás utilizar tu dispositivo
+      móvil para consultar tu saldo, tus movimientos, realizar tus transacciones
+      y administrar tu cuenta. Recuerda que no necesitas saldo mínimo ni monto
+      inicial para su apertura.
+    </ion-text>
+  </div>
+    <ion-text class="title">Lee tu contrato</ion-text>
+    <ion-checkbox labelPlacement="end" color="primary" class="fontTexts">
+      He leído y acepto el contrato
+    </ion-checkbox>
+    <ion-button
+      shape="round"
+      class="button"
+      id="open-custom-dialog"
+      color="primary">
+      ACEPTAR</ion-button
+    >
 
+    <ion-modal id="example-modal" #modal trigger="open-custom-dialog">
+      <ng-template>
+        <div class="wrapper">
+          <ion-img class="logo"
+            class="logoRegalo"
+            src="https://raw.githubusercontent.com/taciga30/Coink-Prueba-Tecnica/master/registro-app/src/assets/images/marrano%20regalo%402x.png"
+            alt="Cerdito Regalo Coink"
+          ></ion-img>
+          <h1>¡Bienvenido a Coink!</h1>
 
+          <p>
+            ¡Cuenta creada exitosamente, tu marrano ya está listo para que
+            empieces a ahorrar!
+          </p>
+          <ion-button
+            shape="round"
+            class="button"
+            id="buttonLogin"
+            color="secondary"
+            >CONTINUAR</ion-button
+          >
+        </div>
+      </ng-template>
+    </ion-modal>
+  </section>
 </ion-content>

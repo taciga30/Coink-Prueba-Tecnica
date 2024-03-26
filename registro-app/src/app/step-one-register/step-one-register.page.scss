@@ -1,12 +1,69 @@
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.header-logo{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.buttonBack{
+  --ion-back-button-icon-size: 40px;
+  margin-right: 72px;
+}
+.title{
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  color: var(--ion-color-secondary);
+}
 .progressBar{
   width: 188px;
   height: 18px;
+  margin: 16px 93px 8px 94px;
+}
+
+.container{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logoTextNumber{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin: 56px 24px 24px 24px;
 }
 .logo{
   width: 72.35px;
   height: 64px;
+  margin-right: 23.65px;
 }
-
+.textNumber{
+  font-family: 'Avenir LT Pro', sans-serif;
+  font-size: 16px;
+}
+#divider{
+  height: 0px;
+  width: 326px;
+  --color: var(--ion-color-primary);
+}
 .cellphoneNumber{
   width: 308px;
   height: 245px;
@@ -15,8 +72,20 @@
   align-content: center;
   justify-content: center;
   flex-wrap: wrap;
+  color: var(--ion-color-secondary);
 }
 
+.inputCellphone{
+  text-align: center;
+  color: #AAAAAA;
+  font-size: 24px;
+  font-family: 'Avenir LT Pro', sans-serif;
+  width: 326px;
+  height: 56px;
+  margin: 32px 25px 48px 24px;
+  padding: 14px 41px 14px 41px;
+  border-radius: 5px;
+}
 .buttonNumber{
   --color: var(--ion-color-secondary);
   font-size: 32px;
@@ -27,7 +96,6 @@
   display: flex;
   align-items: center;
   align-content: center;
-  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -37,7 +105,10 @@
 }
 
 #zero{
-  margin-left: 1px;
+  width: 21px;
+  height: 39px;
+  margin-right: 86.5px;
+  margin-left: 15px;
 }
 
 #buttonCheck{
@@ -51,5 +122,3 @@
   width: 20px;
   height: 16px;
 }
-
-

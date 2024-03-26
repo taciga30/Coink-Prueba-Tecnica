@@ -1,15 +1,46 @@
+.logoMessage, .buttons{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoMessage{
+  margin-top: 144px;
+}
 .logo{
   width: 125.97px;
   height: 154.7px;
 }
-#buttonLogin{
-  color: var(--ion-color-secondary-contrast);
+.ion-padding{
+  padding: 0;
+  margin: 40px 40px 0 40px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
 }
-#buttonRegister{
-  color: var(--ion-color-secondary);
+
+.buttons{
+  margin-top: 134.3px;
 }
 .button{
   --border-radius: 40px;
   width: 326px;
   height: 50px;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+#buttonLogin{
+  color: var(--ion-color-secondary-contrast);
+  margin-top: 16px;
+  font-weight: 500; ;
+}
+#buttonRegister{
+  color: var(--ion-color-secondary);
+  font-weight: bold;
 }
